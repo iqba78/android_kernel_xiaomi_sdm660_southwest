@@ -839,9 +839,8 @@ static void monitor_thermal_zone(struct thermal_zone_device *tz)
 		thermal_zone_device_set_polling(thermal_passive_wq,
 						tz, tz->passive_delay);
 	else if (tz->polling_delay)
-		thermal_zone_device_set_polling(
-				system_freezable_power_efficient_wq,
-				tz, tz->polling_delay);
+		thermal_zone_device_set_polling(system_freezable_wq,
+						tz, tz->polling_delay);
 	else
 		thermal_zone_device_set_polling(NULL, tz, 0);
 
@@ -2491,7 +2490,6 @@ void thermal_zone_device_unregister(struct thermal_zone_device *tz)
 
 	mutex_unlock(&thermal_list_lock);
 
-	cancel_delayed_work_sync(&tz->poll_queue);
 	thermal_zone_device_set_polling(NULL, tz, 0);
 
 	if (tz->type[0])
