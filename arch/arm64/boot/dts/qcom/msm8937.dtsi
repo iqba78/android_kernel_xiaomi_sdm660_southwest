@@ -129,6 +129,12 @@
 			size = <0 0x4000000>;
 			linux,cma-default;
 		};
+
+		pstore_reserve_mem: pstore_reserve_mem_region@0 {
+			compatible = "removed-dma-pool";
+			no-map;
+			reg = <0x0 0x9ff00000 0x0 0x300000>;
+		};
 	};
 
 	aliases {
