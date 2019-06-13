@@ -68,7 +68,7 @@ extern int xiaomi_device_read(void);
 #include "mdss_sync.h"
 
 #ifdef CONFIG_KLAPSE
-#include "klapse.h"
+#include <linux/klapse.h>
 #endif
 
 #ifdef CONFIG_FB_MSM_TRIPLE_BUFFER
