@@ -3071,8 +3071,9 @@ static int __init sps_init(void)
 	sps->ipc_log4 = ipc_log_context_create(SPS_IPC_LOGPAGES *
 				SPS_IPC_REG_DUMP_FACTOR, "sps_ipc_log4", 0);
 	if (!sps->ipc_log4)
-		pr_debug("Failed to create IPC log4\n");
+		pr_err("Failed to create IPC log4\n");
 #endif
+
 	ret = platform_driver_register(&msm_sps_driver);
 
 	return ret;
