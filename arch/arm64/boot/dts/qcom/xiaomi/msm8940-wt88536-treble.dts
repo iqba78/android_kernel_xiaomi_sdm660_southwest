@@ -23,7 +23,7 @@
 #include "santoni/msm8937-S88536AA2.dtsi"
 
 / {
-	model = "Qualcomm Technologies, Inc. MSM8940-PMI8950 QRD SKU7";
+	model = "Qualcomm Technologies, Inc. Santoni";
 	compatible = "qcom,msm8940-qrd-sku7", "qcom,msm8940-qrd",
 			"qcom,msm8940", "qcom,qrd";
 	qcom,board-id= <0x1000b 1>, <0x2000b 1>;
