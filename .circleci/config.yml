@@ -10,9 +10,9 @@ jobs:
            git clone https://github.com/iqba78/android_kernel_xiaomi_sdm660_southwest -b santo-base kernel
            cd kernel
            git clone https://github.com/PREDATOR-project/myscripts.git -b master
-           chmod +x myscripts/clang-setup.sh
+           chmod +x myscripts/clang-san.sh
            chmod +x myscripts/santoni.sh
-           source ./myscripts/clang-setup.sh
+           source ./myscripts/clang-san.sh
            ./myscripts/santoni.sh
 workflows:
   version: 2.1
