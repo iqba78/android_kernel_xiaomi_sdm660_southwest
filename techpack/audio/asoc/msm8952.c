@@ -118,7 +118,7 @@ static int msm8952_dig_mclk_event(struct snd_soc_dapm_widget *w,
 static int msm8952_wsa_switch_event(struct snd_soc_dapm_widget *w,
 			      struct snd_kcontrol *kcontrol, int event);
 static int msm_dmic_event(struct snd_soc_dapm_widget *w,
-                          struct snd_kcontrol *kcontrol, int ev>
+                          struct snd_kcontrol *kcontrol, int event);
 
 #ifdef CONFIG_MACH_XIAOMI_ULYSSE
 int ulysse_msm_spk_ext_pa_ctrl(struct msm_asoc_mach_data *pdatadata, bool value);
