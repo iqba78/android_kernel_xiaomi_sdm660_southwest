@@ -56,8 +56,8 @@ enum haptics_custom_effect_param {
 /* common definitions */
 #define HAP_BRAKE_PATTERN_MAX		4
 #define HAP_WAVEFORM_BUFFER_MAX		8
-#define HAP_VMAX_MV_DEFAULT		1800
-#define HAP_VMAX_MV_MAX			3596
+#define HAP_VMAX_MV_DEFAULT		1660
+#define HAP_VMAX_MV_MAX			2000
 #define HAP_PLAY_RATE_US_DEFAULT	5715
 #define HAP_PLAY_RATE_US_MAX		20475
 #define HAP_PLAY_RATE_US_LSB		5
