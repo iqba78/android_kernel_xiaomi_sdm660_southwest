@@ -715,7 +715,7 @@ void do_exit(long code)
 	schedtune_exit_task(tsk);
 
 	if (unlikely(in_atomic())) {
-		pr_info("note: %s[%d] exited with preempt_count %d\n",
+		pr_debug("note: %s[%d] exited with preempt_count %d\n",
 			current->comm, task_pid_nr(current),
 			preempt_count());
 		preempt_count_set(PREEMPT_ENABLED);
